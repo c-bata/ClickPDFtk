@@ -9,8 +9,6 @@
 #include "support.h"
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-//gboolean *StrString(const char *s1, const char *s2);
 gboolean *StrString(const char *s1, const char *s2)
 {
     s1 += strlen(s1)-strlen(s2);
@@ -19,19 +17,7 @@ gboolean *StrString(const char *s1, const char *s2)
     }else{
         return 0;
     }
-/*
-    int n = strlen(s2);
-    while (1) {
-        s1 = strchr(s1, s2[0]);
-        if (s1 == NULL)
-            return FALSE;
-        if(strncmp(s1, s2, n) == 0)
-            return TRUE;
-        s1++;
-    }
-*/
 }
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 GtkWidget *startwindow;
 GtkWidget *rotatewindow;	//cat_button_clickedのなかで書くとその中でしか使えない。グローバル変数にすること！
@@ -220,7 +206,7 @@ on_folder_open_button_clicked          (GtkButton       *button,
 
 }
 
-/* ここからstartwindow ***********************************************************************/
+/* startwindow ***********************************************************************/
 void
 on_startwindow_show                    (GtkWidget       *widget,
                                         gpointer         user_data)
@@ -247,7 +233,7 @@ on_main_exit_button_clicked            (GtkButton       *button,
 	gtk_main_quit();
 }
 
-/* ここから各ボタンをクリックした時にそれぞれのwindowを開く関数 */
+/* 各ボタンをクリックした時にそれぞれのwindowを開く関数 */
 
 void
 on_start_cat_button_clicked            (GtkButton       *button,
@@ -344,7 +330,7 @@ on_start_custom_button_clicked         (GtkButton       *button,
 }
 
 
-/* ここからcatwindow ***********************************************************************/
+/* catwindow ***********************************************************************/
 
 void
 on_cat_fileadd_button_clicked          (GtkButton       *button,
@@ -568,11 +554,9 @@ on_cat_ok_button_clicked               (GtkButton       *button,
 		outfile = "~/out.pdf";
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 	if(StrString(outfile,".pdf")==FALSE){
 		strcat(outfile,".pdf");
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	filenamea = gtk_entry_get_text(GTK_ENTRY(lookup_widget(catwindow,"cat_infilea_entry")));
 	filenameb = gtk_entry_get_text(GTK_ENTRY(lookup_widget(catwindow,"cat_infileb_entry")));
@@ -623,7 +607,7 @@ on_cat_ok_button_clicked               (GtkButton       *button,
 	gtk_widget_destroy(fc);
 }
 
-/* ここからstampwindow ***********************************************************************/
+/* stampwindow ***********************************************************************/
 
 void
 on_stampwindow_destroy                 (GtkObject       *object,
@@ -793,11 +777,9 @@ on_stamp_ok_button_clicked             (GtkButton       *button,
 		operation = "stamp";
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 	if(StrString(outfile,".pdf")==FALSE){
 		strcat(outfile,".pdf");
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	sprintf(command,"pdftk %s %s %s output %s",filename,operation,opfilename,outfile);
 	system(command);
@@ -809,7 +791,7 @@ on_stamp_ok_button_clicked             (GtkButton       *button,
 
 	gtk_widget_destroy(fc);
 }
-/* ここからprotectwindow ***********************************************************************/
+/* protectwindow ***********************************************************************/
 
 
 void
@@ -969,11 +951,9 @@ on_protect_ok_button_clicked           (GtkButton       *button,
 		outfile = "~/out.pdf";
         }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 	if(StrString(outfile,".pdf")==FALSE){
 		strcat(outfile,".pdf");
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	if(encryption == TRUE && encrypt_option1 == TRUE)
 	{
@@ -1003,7 +983,7 @@ on_protect_ok_button_clicked           (GtkButton       *button,
 }
 
 
-/* ここからacrodialog ***********************************************************************/
+/* acrodialog ***********************************************************************/
 
 void
 on_acrodialog_destroy                  (GtkObject       *object,
@@ -1034,7 +1014,7 @@ on_acroread_okbutton_clicked           (GtkButton       *button,
 
 
 
-/* ここからattachwindow ***********************************************************************/
+/* attachwindow ***********************************************************************/
 
 void
 on_attachwindow_destroy                (GtkObject       *object,
@@ -1217,11 +1197,11 @@ on_attach_ok_button_clicked            (GtkButton       *button,
 		{
 			outfile = "~/out.pdf";
 		}
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		if(StrString(outfile,".pdf")==FALSE){
 			strcat(outfile,".pdf");
 		}
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		sprintf(command,"pdftk %s %s %s output %s",filename,operation,attachfile,outfile);
 	}
 	else
@@ -1242,7 +1222,7 @@ on_attach_ok_button_clicked            (GtkButton       *button,
 }
 
 
-/* ここからburstwindow ***********************************************************************/
+/* burstwindow ***********************************************************************/
 
 
 void
@@ -1357,12 +1337,10 @@ on_burst_ok_button_clicked             (GtkButton       *button,
         	outfile = "~/out";
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 	if(StrString(outfile,".pdf")==TRUE){
 		char *a = outfile+strlen(outfile)-strlen(".pdf");
 		*a = '\0';
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	filename = gtk_entry_get_text(GTK_ENTRY(lookup_widget(burstwindow,"burst_infile_entry")));
 	sprintf(command,"pdftk %s burst output %s_%%02d.pdf",filename,outfile);
@@ -1371,7 +1349,7 @@ on_burst_ok_button_clicked             (GtkButton       *button,
 }
 
 
-/* ここからrotatewindow ***********************************************************************/
+/* rotatewindow ***********************************************************************/
 
 void
 on_rotatewindow_destroy                (GtkObject       *object,
@@ -1487,11 +1465,10 @@ on_rotate_ok_button_clicked            (GtkButton       *button,
 	{
         	outfile = "~/out.pdf";
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	if(StrString(outfile,".pdf")==FALSE){
 		strcat(outfile,".pdf");
 	}
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	gint *rop1 = gtk_combo_box_get_active(GTK_ENTRY(lookup_widget(rotatewindow,"rotate_oppage_comboboxentry")));
 	gint *rop2 = gtk_combo_box_get_active(GTK_ENTRY(lookup_widget(rotatewindow,"rotate_opangle_comboboxentry")));
@@ -1529,7 +1506,7 @@ on_rotate_ok_button_clicked            (GtkButton       *button,
 	gtk_widget_destroy(fc);
 }
 
-/* ここからcustomwindow ***********************************************************************/
+/* customwindow ***********************************************************************/
 
 void
 on_customwindow_destroy                (GtkObject       *object,
