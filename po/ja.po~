@@ -1,0 +1,301 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# ; fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ClickPDFtk 1.0\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=glib&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-12-26 16:32+0900\n"
+"PO-Revision-Date: 2013-12-26 16:32+0900\n"
+"Last-Translator: Masashi <e1020@s.akashi.ac.jp>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/interface.c:74
+msgid "Welcome! - ClickPDFtk"
+msgstr " - ClickPDFtk"
+
+#: ../src/interface.c:80
+msgid "<b>Please select an option mode!</b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:111
+msgid "Merge/Extract"
+msgstr ""
+
+#: ../src/interface.c:133
+msgid "Divide"
+msgstr ""
+
+#: ../src/interface.c:155
+msgid "Rotate"
+msgstr ""
+
+#: ../src/interface.c:177
+msgid "Encrypt/Decrypt"
+msgstr ""
+
+#: ../src/interface.c:199
+msgid "Background/Stamp"
+msgstr ""
+
+#: ../src/interface.c:221
+msgid "Attach Files"
+msgstr ""
+
+#: ../src/interface.c:248
+msgid "<b>Exit!</b>"
+msgstr ""
+
+#: ../src/interface.c:409
+msgid "Merge/Extract Mode"
+msgstr ""
+
+#: ../src/interface.c:457 ../src/interface.c:515 ../src/interface.c:573
+#: ../src/interface.c:740 ../src/interface.c:1011 ../src/interface.c:1142
+#: ../src/interface.c:1398 ../src/interface.c:1467 ../src/interface.c:1545
+#: ../src/interface.c:1834 ../src/interface.c:1921 ../src/interface.c:2000
+#: ../src/interface.c:2075 ../src/interface.c:2364 ../src/interface.c:2545
+#: ../src/interface.c:2913 ../src/interface.c:2992
+msgid "Open "
+msgstr ""
+
+#: ../src/interface.c:468
+msgid "Input File A           "
+msgstr "A"
+
+#: ../src/interface.c:482
+msgid "Page Range of A "
+msgstr "A"
+
+#: ../src/interface.c:526
+msgid "Input File B           "
+msgstr "B"
+
+#: ../src/interface.c:540
+msgid "Page Range of B "
+msgstr "B"
+
+#: ../src/interface.c:584
+msgid "Input File C           "
+msgstr "C"
+
+#: ../src/interface.c:598
+msgid "Page Range of C "
+msgstr "C"
+
+#: ../src/interface.c:627
+msgid "   Add Files    "
+msgstr ""
+
+#: ../src/interface.c:631
+msgid "<b> Input Files </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:647
+msgid "Set pages alternately"
+msgstr ""
+
+#: ../src/interface.c:651 ../src/interface.c:1067 ../src/interface.c:1471
+#: ../src/interface.c:1925
+msgid "<b>  Options  </b>"
+msgstr ""
+
+#: ../src/interface.c:671 ../src/interface.c:1087 ../src/interface.c:1491
+#: ../src/interface.c:1945 ../src/interface.c:2490
+msgid "Output \"out.pdf\" to home directory."
+msgstr "out.df"
+
+#: ../src/interface.c:677 ../src/interface.c:1093 ../src/interface.c:1497
+#: ../src/interface.c:1951 ../src/interface.c:2043 ../src/interface.c:2496
+#: ../src/interface.c:2943
+msgid "Appoint output options."
+msgstr ""
+
+#: ../src/interface.c:694 ../src/interface.c:1146 ../src/interface.c:1549
+#: ../src/interface.c:2004 ../src/interface.c:2549 ../src/interface.c:2996
+msgid "Output Directory"
+msgstr ""
+
+#: ../src/interface.c:701 ../src/interface.c:1153 ../src/interface.c:1556
+#: ../src/interface.c:2011 ../src/interface.c:2556 ../src/interface.c:3003
+msgid "Output File Name"
+msgstr ""
+
+#: ../src/interface.c:744
+msgid "<b> Output Options </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:772 ../src/interface.c:1188 ../src/interface.c:1591
+#: ../src/interface.c:2107 ../src/interface.c:2591 ../src/interface.c:3038
+msgid " Cancel "
+msgstr ""
+
+#: ../src/interface.c:793 ../src/interface.c:1209 ../src/interface.c:1612
+#: ../src/interface.c:2128 ../src/interface.c:2612 ../src/interface.c:3059
+msgid "Output!"
+msgstr ""
+
+#: ../src/interface.c:965
+msgid "Rotate Mode"
+msgstr ""
+
+#: ../src/interface.c:986 ../src/interface.c:1373 ../src/interface.c:1809
+#: ../src/interface.c:2339 ../src/interface.c:2888
+msgid "  Input File  "
+msgstr ""
+
+#: ../src/interface.c:1015 ../src/interface.c:1402 ../src/interface.c:1838
+#: ../src/interface.c:2368 ../src/interface.c:2917
+msgid "<b>  Input File  </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:1040
+msgid "All pages"
+msgstr ""
+
+#: ../src/interface.c:1041
+msgid "Odd pages"
+msgstr ""
+
+#: ../src/interface.c:1042
+msgid "Even pages"
+msgstr ""
+
+#: ../src/interface.c:1049
+msgid "Rotate 90"
+msgstr "90"
+
+#: ../src/interface.c:1050
+msgid "Rotate 180"
+msgstr "180"
+
+#: ../src/interface.c:1051
+msgid "Rotate 270"
+msgstr "90"
+
+#: ../src/interface.c:1053
+msgid "    Pages    "
+msgstr ""
+
+#: ../src/interface.c:1060
+msgid "    Angle    "
+msgstr ""
+
+#: ../src/interface.c:1160 ../src/interface.c:1563
+msgid "<b>  Output Options  </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:1352
+msgid "Background/Stamp Mode"
+msgstr ""
+
+#: ../src/interface.c:1426
+msgid "Background"
+msgstr ""
+
+#: ../src/interface.c:1432
+msgid "Stamp"
+msgstr ""
+
+#: ../src/interface.c:1442
+msgid "  PDF File  "
+msgstr "PDF"
+
+#: ../src/interface.c:1788
+msgid "Attach File Mode"
+msgstr ""
+
+#: ../src/interface.c:1862
+msgid "  Attach File    "
+msgstr ""
+
+#: ../src/interface.c:1868
+msgid "  Unattach File    "
+msgstr ""
+
+#: ../src/interface.c:1891
+msgid "    Please choose attach file.   "
+msgstr ""
+
+#: ../src/interface.c:2018 ../src/interface.c:2079
+msgid "<b>  Output Options </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:2037
+msgid "Output to home directory."
+msgstr ""
+
+#: ../src/interface.c:2318
+msgid "Encrypt/Decrypt Mode"
+msgstr ""
+
+#: ../src/interface.c:2392
+msgid "Encrypt"
+msgstr ""
+
+#: ../src/interface.c:2398
+msgid "Decrypt"
+msgstr ""
+
+#: ../src/interface.c:2424
+msgid " Password "
+msgstr ""
+
+#: ../src/interface.c:2433
+msgid "Set an owner password."
+msgstr "()"
+
+#: ../src/interface.c:2439
+msgid "Set a user password."
+msgstr "()"
+
+#: ../src/interface.c:2461
+msgid "Please Input your password."
+msgstr ""
+
+#: ../src/interface.c:2470
+msgid "<b> Options  </b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:2563 ../src/interface.c:3010
+msgid "<b>  Output Options</b>"
+msgstr "<b></b>"
+
+#: ../src/interface.c:2725
+msgid "Please choose an input file."
+msgstr ""
+
+#: ../src/interface.c:2777
+msgid "Please choose an output directory."
+msgstr ""
+
+#: ../src/interface.c:2867
+msgid "Divide Mode"
+msgstr ""
+
+#: ../src/interface.c:2937
+msgid "Output \"out_??.pdf\" to home directory."
+msgstr "out_.pdf"
+
+#: ../src/interface.c:3142
+msgid "Output completed!"
+msgstr ""
+
+#: ../src/interface.c:3150
+msgid ""
+"Output Completed!!\n"
+"Would you open by \"Adobe Reader\" ?"
+msgstr "Adobe Reader"
+
+#: ../src/support.c:90 ../src/support.c:114
+#, c-format
+msgid "Couldn't find pixmap file: %s"
+msgstr ""

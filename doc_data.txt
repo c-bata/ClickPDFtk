@@ -1,0 +1,15 @@
+InfoKey: Creator
+InfoValue: Microsoft&#174; PowerPoint&#174; 2010
+InfoKey: Title
+InfoValue: &#12304;&#30701;&#32302;&#29256;&#12305;&#23398;&#26657;&#35500;&#26126;2013&#24180;&#24230;
+InfoKey: Producer
+InfoValue: Microsoft&#174; PowerPoint&#174; 2010
+InfoKey: Author
+InfoValue: narieda
+InfoKey: ModDate
+InfoValue: D:20130822161146+09'00'
+InfoKey: CreationDate
+InfoValue: D:20130822161146+09'00'
+PdfID0: ad6d7ff624ed6c459d366cf5488d7a4
+PdfID1: ad6d7ff624ed6c459d366cf5488d7a4
+NumberOfPages: 8
