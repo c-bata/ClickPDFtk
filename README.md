@@ -24,17 +24,48 @@ GTK+で作成したPDFtkのフロントエンドプログラム
 
 ... 作成中 ...
 
-### インストール
 
-ClickPDFtkをインストールするには↓のコマンドを打てばOKです.
+
+### インストール,実行方法
+
+###### clone
+
+```
+$ cd
+$ git clone git@github.com:mejiro/ClickPDFtk.git
+$ cd ClickPDFtk
+```
+
+###### インストール
 
 ```
 $ ./autogen.sh
-$ ./configure --prefix=インストールするフォルダへのパス
+$ ./configure --prefix=$HOME/ClickPDFtk
 $ make clean
 $ make
 $ make install
 ```
+
+###### 実行
+
+```
+$ ~/ClickPDFtk/bin/clickpdftk
+```
+
+このままだと面倒くさいので`~/.profile`にパスを追加
+
+```
+$ vim ~/.profile
+export PATH=$PATH:$HOME/ClickPDFtk/binを追記
+$ source ~/.profile
+```
+
+これで`clickpdftk`と入力すればどこからでもClickPDFtkが起動できる.
+
+```
+$ clickpdftk
+```
+
 
 ### 注意事項
 

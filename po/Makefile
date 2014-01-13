@@ -23,7 +23,7 @@ srcdir = .
 top_srcdir = ..
 
 
-prefix = /usr/local
+prefix = /home/masashi/ClickPDFtk
 exec_prefix = ${prefix}
 datarootdir = ${prefix}/share
 datadir = ${datarootdir}
