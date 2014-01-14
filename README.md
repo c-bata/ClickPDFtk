@@ -113,3 +113,26 @@ $ sudo make install
 $ glade-2 clickpdftk.glade
 ```
 
+### PDFtkのインストール
+
+1. [こちら](http://www.pdflabs.com/tools/pdftk-server/)にアクセス
+2. Build PDFtk Serverのところの「Download and unpack: pdftk-2.02-src.zip(~2MB)」をクリック
+3. 好きなところに解凍
+4. 各環境にあったMakefileを実行(UbuntuならDebian)
+
+例はこちら↓
+
+```
+$ cd pdftk-2.02-dist/
+$ cd pdftk
+$ ls
+Makefile.Base                Makefile.Solaris      pdftk.cc
+Makefile.Debian              Makefile.Suse         pdftk.h
+Makefile.FreeBSD             Makefile.Windows.345  report.cc
+Makefile.FreeBSD.Base.patch  attachments.cc        report.h
+Makefile.OSX-10.6            attachments.h         win32_utf8_include.cc
+Makefile.Redhat              passwords.cc
+Makefile.Slackware-13.1      passwords.h
+$ make -f Makefile.Debian
+```
+
